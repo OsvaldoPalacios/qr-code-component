@@ -1,0 +1,81 @@
+/* Color variables */
+:root {
+  --bg-color: hsl(212, 45%, 89%);
+  --card-color: hsl(0, 0%, 100%);
+  --subtext-color: hsl(216, 15%, 48%);
+  --text-color: hsl(218, 44%, 22%);
+}
+
+/* Reset and box-sizing */
+html {
+  box-sizing: border-box;
+  font-size: 15px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* Global styles */
+body {
+  background-color: var(--bg-color);
+  padding-top: 10vh;
+}
+
+/* Card */
+.card {
+  background-color: var(--card-color);
+  border-radius: 1.5rem;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5vh;
+  padding: 1rem;
+}
+
+.card img {
+  border-radius: 1rem;
+  width: 100%;
+  height: auto;
+}
+
+/* Text box */
+.text-box {
+  font-family: "Outside", sans-serif;
+  text-align: center;
+  margin: 1.6rem 0;
+  padding: 0 1rem;
+}
+
+.text-1 {
+  color: var(--text-color);
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.text-2 {
+  color: var(--subtext-color);
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+/* Footer */
+.attribution {
+  display: block;
+  width: 100%;
+  position: fixed;
+  bottom: 3vh;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.attribution a {
+  color: var(--subtext-color);
+  text-decoration: none;
+}
+
+.attribution a:visited {
+  color: var(--subtext-color);
+}
